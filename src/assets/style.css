@@ -160,3 +160,8 @@ body {
 		opacity: .5;
 	}
 }
+
+.primary-bg {
+    background-color: var(--main-bg-color-light);
+    border-color: var(--main-bg-color-light);
+}
