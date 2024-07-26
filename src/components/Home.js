@@ -3,6 +3,7 @@ import '../assets/style.css';
 import { Container, Row, Col, Form, Card, Carousel } from 'react-bootstrap';
 import SocialMedia from './SocialMedia.js';
 import { useMediaQuery } from 'react-responsive';
+import Contact from './Contact.js';
 // will look into embedding social media posts later
 import { InstagramEmbed } from 'react-social-media-embed';
 import { TikTokEmbed } from 'react-social-media-embed';
@@ -80,24 +81,7 @@ export default function Home() {
             </Col>
             </Row>
         </Container>
-        <Container className='mt-3'>
-            <h2 id='contact-me'>Contact Me</h2>
-            <Form>
-            <Form.Group>
-                <Form.Label>Name</Form.Label>
-                <Form.Control type='text' placeholder='Enter your name' />
-            </Form.Group>
-            <Form.Group>
-                <Form.Label>Email</Form.Label>
-                <Form.Control type='email' placeholder='Enter your email' />
-            </Form.Group>
-            <Form.Group>
-                <Form.Label>Message</Form.Label>
-                <Form.Control as='textarea' rows={3} placeholder='Enter your message' />
-            </Form.Group>
-            <button type='submit'>Submit</button>
-            </Form>
-        </Container>
+        <Contact />
         <Container className='mt-3'>
             <h2 id='support'>Support My Friends</h2>
             {/* Create a carousel of cards where each card has friends name, brief description of what they do, and their social media links */}
