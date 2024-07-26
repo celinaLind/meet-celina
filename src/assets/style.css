@@ -161,6 +161,25 @@ body {
 	}
 }
 
+.social-media {
+    .btn-primary {
+        background-color: var(--main-bg-color-light) !important;
+        color: var(--main-text-color);
+        border: none;
+        padding: 10px 20px;
+        margin: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        &:hover {
+            background-color: #41AEA9;
+        }
+    }
+}
+
+footer {
+    margin: 20px auto ;
+}
 .primary-bg {
     background-color: var(--main-bg-color-light);
     border-color: var(--main-bg-color-light);
