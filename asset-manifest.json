@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/meet-celina/static/css/main.de25a761.css",
+    "main.js": "/meet-celina/static/js/main.35be1817.js",
+    "static/js/453.43761162.chunk.js": "/meet-celina/static/js/453.43761162.chunk.js",
+    "static/media/logo.svg": "/meet-celina/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/meet-celina/index.html",
+    "main.de25a761.css.map": "/meet-celina/static/css/main.de25a761.css.map",
+    "main.35be1817.js.map": "/meet-celina/static/js/main.35be1817.js.map",
+    "453.43761162.chunk.js.map": "/meet-celina/static/js/453.43761162.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de25a761.css",
+    "static/js/main.35be1817.js"
+  ]
+}
