@@ -14,8 +14,8 @@ export default function Contact() {
     };
 
     return (
-        <Container className='mt-3'>
-            <h2 id='contact-me'>Contact Me</h2>
+        <Container className='rotating-border'>
+            <h4 id='contact-me'>Contact Me</h4>
             <Form onSubmit={handleSubmit}>
                 <Row>
                     <Col>
