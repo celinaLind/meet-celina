@@ -49,11 +49,11 @@ export default function Home() {
         <main>
         <Container className='mt-3'>
             <Row>
-            <Col className='rotating-border'>
+            <Col className='rotating-border ma-auto'>
                 <h2>Hi Friend!</h2>
                 <h4 className='intro'>Get to know Celina,</h4>
                 <h4 className="typewriter descriptive-text">talented software developer.</h4>
-                <SocialMedia />
+                <SocialMedia email={"clind323@gmail.com"} linkedInUser={"celina-lind"} discordUser={"hamlit1163"}/>
             </Col>
             <Col>
                 <Container className='d-flex justify-content-center' >
@@ -81,7 +81,6 @@ export default function Home() {
             </Col>
             </Row>
         </Container>
-        <Contact />
         <Container className='mt-3'>
             <h2 id='support'>Support My Friends</h2>
             {/* Create a carousel of cards where each card has friends name, brief description of what they do, and their social media links */}
@@ -102,6 +101,21 @@ export default function Home() {
                         ))}
                     </Carousel>
                 )}
+        </Container>
+        <hr className='rotationalBorder' />
+        <Container className='contact-section mt-3'>
+            <Row>
+            <Col>
+            <h4 id='contact-me'>Contact Me</h4>
+            <Contact />
+            </Col>
+            <Col>
+                <h4>Personal Information</h4>
+                <p>Celina Lind</p> 
+                <p>Based in Las Vegas, NV</p>
+                <SocialMedia email={"clind323@gmail.com"} linkedInUser={"celina-lind"} discordUser={"hamlit1163"}/>
+            </Col>
+            </Row>
         </Container>
         </main>
     );
