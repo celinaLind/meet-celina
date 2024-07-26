@@ -23,18 +23,14 @@ export default function Home() {
                 <SocialMedia email={"clind323@gmail.com"} linkedInUser={"celina-lind"} discordUser={"hamlit1163"}/>
             </Col>
             <Col>
-                <Container className='d-flex justify-content-center' >
+                <Container className='d-flex justify-content-center mt-3' >
+                <Col>
+                    <h3>Celina Lind</h3>
+                    <p>I have many titles: CS student, Headstarter Fellow, Junior Software Developer, aspiring French speaker. These titles are encouraged by my a passion for learning and creating new things. I am experienced in JavaScript, React, CSS and more. 
+                    I am excited to continue learning and growing as a developer and as a person.</p>
+                    <p>When I am not coding, I enjoy spending time with my family and friends. My career goal is to progress in the field of AI and Robotics.</p>
+                </Col>
                 </Container>
-            </Col>
-            </Row>
-        </Container>
-        <Container className='mt-3'>
-            <Row>
-            <Col>
-                <h2 id='about'>About Me</h2>
-                <p>
-                I am a software developer with a passion for learning and creating new things. I am experienced in JavaScript, React, and Ruby on Rails. I am currently learning Python and Django. I am excited to continue learning and growing as a developer.
-                </p>
             </Col>
             </Row>
         </Container>
@@ -118,14 +114,15 @@ export default function Home() {
         <Container className='contact-section mt-3'>
             <Row>
             <Col>
-            <h4 id='contact-me'>Contact Me</h4>
+            {/* <h4 id='contact-me'>Contact Me</h4> */}
             <Contact />
             </Col>
             <Col>
-                <h4>Personal Information</h4>
-                <p>Celina Lind</p> 
+                <Container className='rotating-border'>
+                <h4>Celina Lind</h4> 
                 <p>Based in Las Vegas, NV</p>
                 <SocialMedia email={"clind323@gmail.com"} linkedInUser={"celina-lind"} discordUser={"hamlit1163"}/>
+                </Container>
             </Col>
             </Row>
         </Container>
