@@ -79,6 +79,11 @@ body {
             }
         
         }
+
+        h2 {
+            background-color:#41aea8a2 !important;
+            padding: 8px;
+        }
     }
 }
 
