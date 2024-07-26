@@ -1,0 +1,162 @@
+:root {
+    --main-text-color: #E8FFFF;
+    --main-bg-color: #213E3B;
+    --main-bg-color-light: #41AEA9;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color) !important;
+
+    header {
+        padding: 1px;
+        background-color: rgba(75, 126, 121, 0.705);
+
+        h1 {
+            margin-left: 20px;
+        }
+
+        
+       nav {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            width: 30%;
+            .navigation {
+                width: 100%;
+                justify-content: space-evenly;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                margin-right: 20px;
+                li {
+                    margin-left: 10px;
+                    a {
+                        color: var(--main-text-color);
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: underline dotted;
+                        }
+                    }
+                }
+            }
+        }
+    
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            /* And have nav links spread across row */
+            .navigation {
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+           
+        }
+    }
+
+    main {
+        max-width: 1250px;
+        margin: auto;
+
+        .social-media {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            a {
+                margin: 0 10px;
+                color: var(--main-text-color);
+                text-decoration: none;
+                font-size: 1.5rem;
+                &:hover {
+                    text-decoration: underline dotted;
+                }
+            }
+        
+        }
+    }
+}
+
+
+.typewriter {
+    color: #A6F6F1;
+    text-shadow:#E8FFFF 0px 0px 10px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #E8FFFF; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #E8FFFF }
+  }
+
+  @keyframes rotate {
+	100% {
+		transform: rotate(1turn);
+	}
+}
+
+.rotating-border {
+	position: relative;
+	z-index: 0;
+	width: 400px;
+	height: 300px;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 2rem;
+	
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: -2;
+		left: -100%;
+		top: -100%;
+		width: 300%;
+		height: 300%;
+		background-repeat: no-repeat;
+		background-size: 50% 50%, 50% 50%;
+		background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+		background-image: linear-gradient(#A6F6F1, #A6F6F1), linear-gradient(#41AEA9, #41AEA9), linear-gradient(#B7B597, #B7B597), linear-gradient(#6B8A7A, #6B8A7A);
+		animation: rotate 4s linear infinite;
+	}
+	
+	&::after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		left: 6px;
+		top: 6px;
+		width: calc(100% - 12px);
+		height: calc(100% - 12px);
+		background: #213e3ba0;
+		border-radius: 5px;
+		/* animation: opacityChange 3s infinite alternate; */
+	}
+}
+
+@keyframes opacityChange {
+	50% {
+		opacity:1;
+	}
+	100% {
+		opacity: .5;
+	}
+}
