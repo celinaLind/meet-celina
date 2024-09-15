@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 // Create a SocialMedia component that will display social media links with the ability to distinguish which link is which
-export default function SocialMedia({ linkedInUser, discordUser, discordChannel, instagramUser, email, youtubeUser, tiktokUser, twitchUser }) {
+export default function SocialMedia({ linkedInUser, discordUser, discordChannel, instagramUser, email, youtubeUser, tiktokUser, twitchUser, gitHubUser }) {
     return (
         // Add social media links as icons for linkedin, github, instagram, youtube, tiktok, and email
         <div className='social-media'>
@@ -34,6 +34,9 @@ export default function SocialMedia({ linkedInUser, discordUser, discordChannel,
             </Button>}
             {twitchUser && <Button href={`https://www.twitch.tv/${twitchUser}`} target='_blank' rel='noreferrer'>
                 <FontAwesomeIcon icon={['fab', 'twitch']} />
+            </Button>}
+            {gitHubUser && <Button href={`https://www.github.com/${gitHubUser}`} target='_blank' rel='noreferrer'>
+                <FontAwesomeIcon icon={['fab', 'github']} />
             </Button>}
         </div>
     );
